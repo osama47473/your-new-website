@@ -1,0 +1,27 @@
+{
+  "name": "your-new-website",
+  "version": "0.0.1",
+  "description": "A simple static site built with Vite.",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead"
+  ],
+  "engines": {
+    "node": "16.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/your-new-website"
+  },
+  "author": "Sue Smith <sue.smith@fastly.com>",
+  "glitch": {
+    "projectType": "generated_static"
+  }
+}

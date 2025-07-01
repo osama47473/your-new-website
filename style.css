@@ -1,0 +1,158 @@
+/******************************************************************************
+TIP: This is the stylesheet for the site
+******************************************************************************/
+
+/******************************************************************************
+START Page structure and element resets
+******************************************************************************/
+
+/* A set of default style */
+:root {
+  /* Generic sizing for the page */
+  --wrapper-height: 80vh;
+
+  /* Fonts for different elements */
+  --font-family: sans-serif;
+  --font-family-header: sans-serif;
+  --font-family-list: monospace;
+
+  /* Colors you'll see cascade through the elements */
+
+  /* Set your own colors! */
+  --color-bg: #17e593;
+  --color-bg-alt: #66bfff;
+  --color-text-main: #000000;
+  --color-primary: #ffff29;
+  --theme-color-title: #ffff29;
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Page structure */
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  background: fixed linear-gradient(0deg, var(--color-bg), var(--color-bg-alt));
+  text-align: left;
+  color: var(--color-text-main);
+}
+
+.wrapper {
+  min-height: var(--wrapper-height);
+  place-items: center;
+  margin: 1rem 2rem 0;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* The footer and our remix on glitch button */
+
+.tagline {
+  font-size: clamp(1rem, 0.925rem + 0.3333vw, 1.1rem);
+  padding-top: 1rem;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto 0;
+  flex-wrap: wrap;
+  border-top: 4px solid #ffffff;
+  max-width: 550px;
+  padding-top: 1rem;
+}
+.btn--remix {
+  font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
+  padding: 0.8rem 1.75rem;
+  /*font sizes scaled by viewport https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/*/
+  font-size: clamp(0.9rem, 0.825rem + 0.3333vw, 1rem);
+  line-height: 1rem;
+  font-weight: 500;
+  height: 3rem;
+  align-items: center;
+  cursor: pointer;
+  background: #ffffff;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000000;
+  white-space: nowrap;
+  flex-grow: 1;
+  text-align: center;
+}
+.btn--remix img {
+  position: relative;
+  top: 1px;
+  margin-right: 0.25rem;
+}
+.btn--remix:hover,
+.btn--remix:focus {
+  background-color: var(--theme-color-title);
+}
+
+/* Typography */
+p {
+  line-height: 1.5 !important;
+}
+.instructions {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-family-header);
+  font-weight: bold;
+  line-height: 1.1;
+  color: var(--theme-color-title);
+}
+h1 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 4rem;
+  display: inline-flex;
+  color: var(--theme-color-title);
+  justify-content: left;
+}
+
+/* Link styles */
+a:hover,
+a:active,
+a:focus {
+  background: var(--color-primary);
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+img.illustration {
+  max-width: 12rem;
+}
+.imgholder {
+  width: 100%;
+  text-align: right;
+}
+
+/* Links that open files in the editor */
+.fileopener {
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 3px solid var(--color-text-main);
+}
+.fileopener:hover {
+  color:var(--theme-color-title);
+  border-color:var(--theme-color-title);
+}
