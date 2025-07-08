@@ -1,5 +1,7 @@
 # Your new website!
 
+> ⚠️ **Glitch project hosting shuts down on 8th July 2025 so you won't be able to remix this project anymore – you are welcome to use the source code if you'd like to deploy it somewhere else!**
+
 This is a website you can remix to make your own. Open the __Preview__ pane at the bottom of the Glitch editor to see your changes appear live. On the left you'll find the files that make up your site, including HTML, JavaScript, and CSS. You can upload images in __Assets__. Go ahead and edit your remix! 🪄
 
 _Last updated: 9 Jan 2024_
